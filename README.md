@@ -95,7 +95,7 @@ Steps performed:
 ---
 
 # Project Structure
-
+```
 customer_segmentation_sql
 │
 ├── data
@@ -118,7 +118,7 @@ customer_segmentation_sql
 │ ├── 09_average_customer_tenure.sql
 │ └── 10_campaign_binary_validation.sql
 
-
+```
 
 ---
 
