@@ -33,7 +33,7 @@ CREATE TABLE raw_customers (
 
 
 -- COPY raw_customers
--- FROM 'D:/Library/SQL_Project_2/0_data/cleaned_data.csv'
+-- FROM 'D:/Library/customer_segmentation_sql/data/cleaned_data.csv'
 -- DELIMITER ','
 -- CSV HEADER;
 
