@@ -192,6 +192,15 @@ customer_segmentation_sql
 
 ---
 
+## 🧠 Skills Demonstrated
+
+- SQL (Joins, CTEs, Subqueries, Aggregations)
+- Data Modeling & Normalization
+- ETL Pipeline Design
+- Customer Segmentation
+- Business Insight Generation
+- Analytical Thinking
+
 ## 🎯 Conclusion
 
 This project demonstrates the ability to:
