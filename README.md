@@ -1,251 +1,314 @@
-# Customer Segmentation & Marketing Campaign Analysis using SQL
+# 📊 Customer Segmentation & Marketing Campaign Analysis using SQL
 
 ## 📌 Project Overview
 
-This project analyzes a real-world marketing campaign dataset using PostgreSQL and SQL to understand customer behavior, spending patterns, campaign effectiveness, and retention strategies.
+This project demonstrates end-to-end SQL analysis on a real-world **Marketing Campaign** dataset using **PostgreSQL**. It covers the complete workflow from database normalization and ETL to advanced SQL analysis using Window Functions and Business Analytics.
 
-The dataset was initially cleaned using Python, and this project extends that work by building a structured SQL-based system including database design, ETL pipeline, and multi-level analysis (Basic → Intermediate → Advanced).
-
----
-
-## 🎯 Project Objectives
-
-- Design a normalized relational database  
-- Build an ETL pipeline using SQL  
-- Perform analytical queries to extract insights  
-- Analyze customer behavior and spending patterns  
-- Evaluate marketing campaign effectiveness  
-- Study customer retention and complaint behavior  
+The project is designed to strengthen SQL skills by solving practical business problems and generating actionable insights from customer purchasing behavior, demographics, and marketing campaign performance.
 
 ---
 
-## 🧰 Technologies Used
+# 🎯 Project Goals
 
-- PostgreSQL  
-- SQL  
+The primary goals of this project are to:
 
-### Pre-processing
-
-- Python  
-- Pandas  
-- NumPy  
-- Jupyter Notebook  
-
----
-
-## 🗂️ Dataset Information
-
-**Dataset:** Marketing Campaign Data (Kaggle)
-
-### Key Features
-
-- Customer demographics (income, education, marital status)  
-- Household details (kids, teens)  
-- Product spending categories  
-- Purchase channels (Web, Store, Catalog)  
-- Campaign responses (Cmp1–Cmp5)  
-- Complaint records  
+- Build a normalized relational database from raw data.
+- Perform ETL (Extract, Transform, Load) using SQL.
+- Practice SQL concepts from beginner to advanced level.
+- Master Window Functions for analytical queries.
+- Solve real-world business problems using SQL.
+- Analyze customer behavior and purchasing trends.
+- Evaluate marketing campaign performance.
+- Build a portfolio-ready SQL project for Data Analyst and Business Analyst roles.
 
 ---
 
-## 🏗️ Database Design
+# 🛠️ Technologies Used
 
-The dataset was normalized into the following tables:
+### Database
+- PostgreSQL
+- SQL
 
-- `customers` — demographic data  
-- `spending` — product category spending  
-- `purchases` — purchase behavior across channels  
-- `campaigns` — campaign response data  
-- `complaints` — complaint records  
-- `raw_customers` — staging table for ETL  
+### Data Processing
+- Python
+- Pandas
+- NumPy
+- Jupyter Notebook
 
 ---
 
-## 🔄 ETL Pipeline
+# 📂 Dataset
+
+**Dataset:** Marketing Campaign Dataset
+
+The dataset contains information about:
+
+- Customer Demographics
+- Income
+- Education
+- Marital Status
+- Household Information
+- Product Spending
+- Purchase Channels
+- Marketing Campaign Responses
+- Customer Complaints
+
+---
+
+# 🏗️ Database Schema
+
+The raw dataset was normalized into the following tables:
+
+- Customers
+- Spending
+- Purchases
+- Campaigns
+- Complaints
+
+Normalization was performed to reduce redundancy and improve query performance.
+
+---
+
+# 🔄 ETL Workflow
+
 ```
-CSV Dataset
-↓
-Raw Staging Table (raw_customers)
-↓
+Raw CSV Dataset
+       │
+       ▼
+Python Data Cleaning
+       │
+       ▼
+PostgreSQL Staging Table
+       │
+       ▼
 SQL Transformations
-↓
-Normalized Tables
+       │
+       ▼
+Normalized Database
+       │
+       ▼
+Business Analysis
 ```
 
-### Steps
+---
 
-1. Load CSV into staging table  
-2. Transform data using SQL  
-3. Insert into normalized tables  
-4. Validate data integrity  
+# 📊 SQL Analysis
+
+## ✅ 1. Beginner SQL
+
+Topics Covered
+
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- Aggregate Functions
+- DISTINCT
+- LIMIT
+- Filtering Records
 
 ---
 
-## 📊 SQL Analysis
+## ✅ 2. Intermediate SQL
 
-### ✅ Basic SQL Analysis
+Topics Covered
 
-- Total number of customers  
-- Duplicate ID validation  
-- Missing income detection  
-- Customer age statistics  
-- Complaint analysis  
-- Campaign acceptance rate  
-- Customers with children  
-- Education distribution  
-- Average tenure  
-- Campaign data validation  
-
----
-
-### 🚀 Intermediate SQL Analysis
-
-**Focus:** Customer behavior and spending insights
-
-#### 💰 Spending Analysis
-
-- Total spending per customer  
-- Highest revenue-generating product category  
-- Average spending by category  
-- Zero spending vs purchase behavior  
-
-#### 👨‍👩‍👧 Customer Behavior
-
-- Income vs total spending relationship  
-- Spending comparison (with vs without children)  
-- Product preference by household type  
-
-#### 🛒 Purchase Behavior
-
-- Average purchases per channel  
-- Most used purchase channel  
-- Channel preference by income group  
-
-#### 🌐 Web & Engagement
-
-- Web visits vs actual purchases  
-- Engagement vs conversion gap  
-
-#### 🎯 Deal Analysis
-
-- Deal-dependent customers  
-- Spending vs discount usage  
-- Revenue contribution of deal-driven customers  
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- SELF JOIN
+- CASE Statements
+- Subqueries
+- Correlated Subqueries
+- UNION
+- UNION ALL
+- Common Table Expressions (CTEs)
 
 ---
 
-## 🧠 Advanced SQL Analysis
+## ✅ 3. Advanced SQL
 
-**Focus:** Campaign effectiveness and retention strategy
+Topics Covered
 
-### 📢 Campaign Effectiveness
-
-- Which campaign (Cmp1–Cmp5) has the highest acceptance rate  
-- Which campaign generates the highest average customer spending  
-- Do campaign responders spend more than non-responders  
-
-### 💰 Revenue Impact
-
-- Spending comparison: responders vs non-responders  
-- Impact of campaign acceptance on overall revenue  
-
-### 🔍 Customer Targeting
-
-- Which demographics respond best to marketing campaigns  
-- Influence of income and education on campaign success  
-
-### ⚠️ Complaint Analysis
-
-- Are customers with complaints still high-value customers  
-- Percentage of high-spending customers who complain  
-- Complaint rates by income and education level  
-
-### 🔄 Retention Strategy
-
-- Should complaining customers be retained  
-- Are campaign responders less likely to complain  
+- Complex CTEs
+- Nested Queries
+- Multi-table Analysis
+- Revenue Analysis
+- Customer Spending Analysis
+- Marketing Campaign Analysis
+- Customer Insights
 
 ---
 
-## 📈 Key Business Insights
+## ✅ 4. Window Functions
 
-- High acceptance does not always mean high revenue  
-- Campaign responders generally spend more  
-- High-value customers can still generate complaints  
-- Complaint behavior varies across income and education segments  
-- Engagement does not always convert into purchases  
-- Retaining high-value complaining customers is critical  
+Topics Covered
+
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- NTILE()
+- LAG()
+- LEAD()
+- FIRST_VALUE()
+- LAST_VALUE()
+- Running Totals
+- Rolling Averages
+- Partition-based Analysis
 
 ---
 
-## 📁 Project Structure
+## 🚧 5. Business Analysis SQL (Coming Soon)
+
+A dedicated **Business Analysis SQL** file will be uploaded within the next few days.
+
+It will include real-world analytical questions such as:
+
+- Customer Segmentation
+- Customer Lifetime Value (CLV)
+- Revenue Contribution Analysis
+- Product Category Performance
+- Marketing Campaign Effectiveness
+- Digital Engagement Analysis
+- Purchase Behavior Analysis
+- Customer Retention Analysis
+- Customer Churn Analysis
+- Advanced KPI Reporting
+
+---
+
+# 📁 Repository Structure
+
+```
+# 📁 Repository Structure
 
 ```
 customer_segmentation_sql
 │
-├── data
-│ └── marketing_clean.csv
+├── 📁 data
+│   ├── Raw Dataset
+│   └── Cleaned Dataset
 │
-├── Normalisation_&_ETL
-│ ├── create_tables.sql
-│ ├── raw_table.sql
-│ └── data_transformation.sql
+├── 📁 Normalisation & ETL
+│   ├── Database Schema
+│   ├── Table Creation Scripts
+│   ├── ETL Queries
+│   └── Data Loading Scripts
 │
-├── sql_analysis_basics
-│ └── basic queries
+├── 📁 sql_analysis_basics
+│   └── Beginner SQL Queries
 │
-├── sql_analysis_intermediate
-│ └── behavior & segmentation queries
+├── 📁 sql_analysis_intermediate
+│   └── Intermediate SQL Queries
 │
-├── sql_analysis_advanced
-│ └── campaign & retention queries
+├── 📁 sql_analysis_advanced
+│   └── Advanced SQL Queries
 │
-└── README.md
-
+├── 📁 sql_analysis_windows_functions
+│   └── Window Functions SQL Queries
+│
+├── 📁 sql_analysis_business_decisions_&_strategy
+│   └── Business Analysis SQL Queries
+│
+└── 📄 README.md
 ```
 
-## 🧠 Skills Demonstrated
+---
 
-- SQL (Joins, CTEs, Subqueries, Aggregations)  
-- Data Modeling & Normalization  
-- ETL Pipeline Development  
-- Customer Segmentation  
-- Business Insight Generation  
-- Analytical Thinking  
+# 💡 SQL Skills Demonstrated
+
+- SQL Fundamentals
+- Joins
+- Aggregate Functions
+- Common Table Expressions (CTEs)
+- Window Functions
+- Ranking Functions
+- CASE Statements
+- Subqueries
+- Data Normalization
+- ETL Development
+- Customer Segmentation
+- Business Analytics
+- Marketing Analytics
 
 ---
 
-## 🔮 Future Enhancements (Ongoing Work 🚀)
+# 📈 Key Business Insights
 
-This project is actively being expanded with more advanced SQL concepts and business-focused analysis.
+This project helps answer business questions such as:
 
-Upcoming additions include:
-
-- Window functions and advanced customer segmentation  
-- Revenue contribution and percentile-based analysis  
-- Campaign performance across customer segments  
-- Business decision-making and strategy-driven insights  
-
-These enhancements will be added gradually as the project evolves.
-
----
-
-## 📌 Project Status
-
-🚧 Ongoing Project — Advanced SQL and business analytics sections are currently in progress and will be integrated step by step.
+- Which customers generate the highest revenue?
+- Which product categories contribute the most revenue?
+- Which customer segments spend the most?
+- How effective are marketing campaigns?
+- Which purchase channels perform best?
+- Which customers are least engaged digitally?
+- Which customer groups respond positively to campaigns?
+- How does income influence purchasing behavior?
 
 ---
 
-## 💡 Project Goal
+# 🎯 Learning Outcomes
 
-To build strong SQL expertise and gain hands-on experience in real-world marketing analytics, customer segmentation, and data-driven decision-making.
+By completing this project, I gained practical experience in:
+
+- Database Design
+- Data Cleaning
+- ETL Development
+- SQL Query Writing
+- Window Functions
+- Customer Analytics
+- Marketing Analytics
+- Business Intelligence
+- Analytical Problem Solving
+- Real-world Data Analysis
 
 ---
 
-## 🎯 Conclusion
+# ✅ Project Status
 
-This project demonstrates the ability to design relational databases, build ETL pipelines, perform advanced SQL analysis, and generate actionable business insights for marketing and customer retention.
+- ✅ Database Design Completed
+- ✅ Data Cleaning Completed
+- ✅ ETL Completed
+- ✅ Beginner SQL Queries Completed
+- ✅ Intermediate SQL Queries Completed
+- ✅ Advanced SQL Queries Completed
+- ✅ Window Functions Queries Completed
+- 🚧 Business Analysis SQL Queries are currently being expanded with additional real-world case studies and will be updated regularly.
 
 ---
 
-⭐ This project is continuously evolving with advanced SQL techniques and business-focused analytics.
+# 🏁 Conclusion
+
+This project demonstrates an end-to-end SQL analytics workflow—from transforming raw data into a normalized database to extracting meaningful business insights through SQL.
+
+Using a real-world marketing campaign dataset, the project showcases practical experience in:
+
+- Database Design & Normalization
+- ETL Pipeline Development
+- Advanced SQL Querying
+- Window Functions
+- Customer Segmentation
+- Revenue Analysis
+- Marketing Analytics
+- Business Intelligence
+
+The repository will continue to grow with additional **Business Analysis SQL case studies**, advanced analytical queries, and real-world business scenarios to further strengthen practical SQL and data analytics skills.
+
+---
+
+## ⭐ Future Enhancements
+
+Upcoming updates include:
+
+- Business Analysis SQL Queries
+- SQL Query Optimization Techniques
+- Stored Procedures
+- Views & Materialized Views
+- Indexing and Performance Tuning
+- Dashboard Integration with Power BI/Tableau
+
+---
+
+⭐ **If you found this project helpful, feel free to explore the queries and check back for future updates as more real-world business analysis problems are added.**

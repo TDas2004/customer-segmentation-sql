@@ -1,0 +1,1 @@
+-- Based on all insights, what customer strategy should the company adopt to maximize revenue and reduce waste?
