@@ -181,9 +181,6 @@ It will include real-world analytical questions such as:
 # 📁 Repository Structure
 
 ```
-# 📁 Repository Structure
-
-```
 customer_segmentation_sql
 │
 ├── 📁 data
