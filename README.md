@@ -213,7 +213,6 @@ customer_segmentation_sql
 │
 └── 📄 README.md
 ```
-
 ---
 
 # 💡 SQL Skills Demonstrated
