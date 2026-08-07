@@ -243,8 +243,6 @@ This project answers practical business questions using SQL, including:
 ---
 
 # 💼 Business Recommendations
-
-<<<<<<< HEAD
 ```
 customer_segmentation_sql
 │
@@ -309,7 +307,6 @@ Based on the SQL analysis, the following business strategies are recommended:
 
 Focus on customer retention, personalized marketing, flexible payment options, digital transformation, and data-driven customer segmentation to maximize revenue while minimizing unnecessary marketing costs.
 
->>>>>>> ed3219d (Finalize SQL project with business analysis and updated documentation)
 ---
 
 # 🧠 SQL Skills Demonstrated
@@ -357,7 +354,6 @@ The repository reflects not only technical SQL proficiency but also the ability 
 
 ---
 
-<<<<<<< HEAD
 ## ⭐ Future Enhancements
 
 Upcoming updates include:
@@ -374,4 +370,4 @@ Upcoming updates include:
 ⭐ **If you found this project helpful, feel free to explore the queries and check back for future updates as more real-world business analysis problems are added.**
 =======
 ## ⭐ If you found this project useful, consider giving it a star and exploring the SQL queries included in this repository.
->>>>>>> ed3219d (Finalize SQL project with business analysis and updated documentation)
+
