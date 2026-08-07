@@ -106,9 +106,7 @@ The raw dataset was normalized into multiple relational tables to reduce redunda
 
 # 🖼️ Entity Relationship Diagram (ERD)
 
-> **Add your ER Diagram image here**
-
-```markdown
+```html
 <p align="center">
     <img src="images/er_diagram.png" width="900">
 </p>
