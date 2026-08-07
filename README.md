@@ -106,11 +106,11 @@ The raw dataset was normalized into multiple relational tables to reduce redunda
 
 # 🖼️ Entity Relationship Diagram (ERD)
 
-```html
+
 <p align="center">
     <img src="images/er_diagram.png" width="900">
 </p>
-```
+
 
 ---
 
