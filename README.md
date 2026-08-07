@@ -243,36 +243,6 @@ This project answers practical business questions using SQL, including:
 ---
 
 # 💼 Business Recommendations
-```
-customer_segmentation_sql
-│
-├── 📁 data
-│   ├── Raw Dataset
-│   └── Cleaned Dataset
-│
-├── 📁 Normalisation & ETL
-│   ├── Database Schema
-│   ├── Table Creation Scripts
-│   ├── ETL Queries
-│   └── Data Loading Scripts
-│
-├── 📁 sql_analysis_basics
-│   └── Beginner SQL Queries
-│
-├── 📁 sql_analysis_intermediate
-│   └── Intermediate SQL Queries
-│
-├── 📁 sql_analysis_advanced
-│   └── Advanced SQL Queries
-│
-├── 📁 sql_analysis_windows_functions
-│   └── Window Functions SQL Queries
-│
-├── 📁 sql_analysis_business_decisions_&_strategy
-│   └── Business Analysis SQL Queries
-│
-└── 📄 README.md
-```
 =======
 Based on the SQL analysis, the following business strategies are recommended:
 
@@ -368,6 +338,4 @@ Upcoming updates include:
 ---
 
 ⭐ **If you found this project helpful, feel free to explore the queries and check back for future updates as more real-world business analysis problems are added.**
-=======
-## ⭐ If you found this project useful, consider giving it a star and exploring the SQL queries included in this repository.
 
