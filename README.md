@@ -243,7 +243,7 @@ This project answers practical business questions using SQL, including:
 ---
 
 # 💼 Business Recommendations
-=======
+
 Based on the SQL analysis, the following business strategies are recommended:
 
 ### Customer Retention
@@ -300,20 +300,6 @@ Focus on customer retention, personalized marketing, flexible payment options, d
 
 ---
 
-# 🚀 Future Improvements
-
-Future enhancements planned for this project include:
-
-- SQL Query Optimization
-- Indexing & Performance Tuning
-- Views
-- Materialized Views
-- Stored Procedures
-- Additional Business Case Studies
-- End-to-End Power BI Dashboard (to be developed in a separate repository)
-
----
-
 # 🏁 Conclusion
 
 This project demonstrates how SQL can be used to transform raw marketing data into meaningful business insights.
@@ -338,4 +324,3 @@ Upcoming updates include:
 ---
 
 ⭐ **If you found this project helpful, feel free to explore the queries and check back for future updates as more real-world business analysis problems are added.**
-
