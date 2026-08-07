@@ -1,1 +1,0 @@
--- Which low-spending customers show high campaign responsiveness?

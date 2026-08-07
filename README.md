@@ -1,39 +1,74 @@
 # 📊 Customer Segmentation & Marketing Campaign Analysis using SQL
 
-## 📌 Project Overview
+<p align="center">
 
-This project demonstrates end-to-end SQL analysis on a real-world **Marketing Campaign** dataset using **PostgreSQL**. It covers the complete workflow from database normalization and ETL to advanced SQL analysis using Window Functions and Business Analytics.
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)
+![SQL](https://img.shields.io/badge/SQL-Advanced-success)
+![Python](https://img.shields.io/badge/Python-ETL-yellow?logo=python)
+![Project](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-The project is designed to strengthen SQL skills by solving practical business problems and generating actionable insights from customer purchasing behavior, demographics, and marketing campaign performance.
+</p>
 
 ---
 
-# 🎯 Project Goals
+# 📌 Project Overview
 
-The primary goals of this project are to:
+This project demonstrates an end-to-end SQL analysis workflow using a real-world **Marketing Campaign** dataset.
 
-- Build a normalized relational database from raw data.
-- Perform ETL (Extract, Transform, Load) using SQL.
+The project covers the complete journey from cleaning raw data and designing a normalized relational database to solving practical business problems using SQL.
+
+The primary objective of this repository is to demonstrate strong SQL skills through database normalization, ETL, analytical SQL queries, Window Functions, and business-driven customer analysis.
+
+---
+
+# 🚀 Project Highlights
+
+✅ PostgreSQL Database Design
+
+✅ Data Cleaning & ETL
+
+✅ Database Normalization
+
+✅ Beginner SQL
+
+✅ Intermediate SQL
+
+✅ Advanced SQL
+
+✅ Window Functions
+
+✅ Customer Segmentation
+
+✅ Marketing Campaign Analysis
+
+✅ Business Decision Making using SQL
+
+---
+
+# 🎯 Project Objectives
+
+The objectives of this project are to:
+
+- Build a normalized relational database from raw marketing data.
+- Perform ETL (Extract, Transform, Load) using Python and SQL.
 - Practice SQL concepts from beginner to advanced level.
-- Master Window Functions for analytical queries.
 - Solve real-world business problems using SQL.
-- Analyze customer behavior and purchasing trends.
-- Evaluate marketing campaign performance.
-- Build a portfolio-ready SQL project for Data Analyst and Business Analyst roles.
+- Analyze customer purchasing behavior.
+- Evaluate marketing campaign effectiveness.
+- Generate actionable business insights.
+- Build a portfolio-ready SQL project for Data Analyst roles.
 
 ---
 
 # 🛠️ Technologies Used
 
-### Database
-- PostgreSQL
-- SQL
-
-### Data Processing
-- Python
-- Pandas
-- NumPy
-- Jupyter Notebook
+| Category | Technology |
+|----------|------------|
+| Database | PostgreSQL |
+| Query Language | SQL |
+| Data Cleaning | Python |
+| Libraries | Pandas, NumPy |
+| Environment | Jupyter Notebook |
 
 ---
 
@@ -41,12 +76,12 @@ The primary goals of this project are to:
 
 **Dataset:** Marketing Campaign Dataset
 
-The dataset contains information about:
+The dataset contains customer information including:
 
 - Customer Demographics
-- Income
 - Education
 - Marital Status
+- Income
 - Household Information
 - Product Spending
 - Purchase Channels
@@ -55,9 +90,11 @@ The dataset contains information about:
 
 ---
 
-# 🏗️ Database Schema
+# 🗄️ Database Design
 
-The raw dataset was normalized into the following tables:
+The raw dataset was normalized into multiple relational tables to reduce redundancy and improve data consistency.
+
+### Tables
 
 - Customers
 - Spending
@@ -65,7 +102,17 @@ The raw dataset was normalized into the following tables:
 - Campaigns
 - Complaints
 
-Normalization was performed to reduce redundancy and improve query performance.
+---
+
+# 🖼️ Entity Relationship Diagram (ERD)
+
+> **Add your ER Diagram image here**
+
+```markdown
+<p align="center">
+    <img src="images/er_diagram.png" width="900">
+</p>
+```
 
 ---
 
@@ -73,77 +120,103 @@ Normalization was performed to reduce redundancy and improve query performance.
 
 ```
 Raw CSV Dataset
-       │
-       ▼
+        │
+        ▼
 Python Data Cleaning
-       │
-       ▼
+        │
+        ▼
 PostgreSQL Staging Table
-       │
-       ▼
+        │
+        ▼
 SQL Transformations
-       │
-       ▼
+        │
+        ▼
 Normalized Database
-       │
-       ▼
-Business Analysis
+        │
+        ▼
+SQL Analysis
+        │
+        ▼
+Business Insights
+        │
+        ▼
+Business Recommendations
 ```
 
 ---
 
-# 📊 SQL Analysis
+# 📁 Repository Structure
 
-## ✅ 1. Beginner SQL
+```
+customer_segmentation_sql
+│
+├── 📁 data
+│
+├── 📁 images
+│   └── er_diagram.png
+│
+├── 📁 Normalisation_and_ETL
+│
+├── 📁 sql_analysis_basics
+│
+├── 📁 sql_analysis_intermediate
+│
+├── 📁 sql_analysis_advanced
+│
+├── 📁 sql_analysis_windows_functions
+│
+├── 📁 sql_analysis_business_decisions_and_strategy
+│
+├── 📄 ER_diagram.pgerd
+│
+└── 📄 README.md
+```
 
-Topics Covered
+---
+
+# 📚 SQL Topics Covered
+
+## ✅ Beginner SQL
 
 - SELECT
 - WHERE
 - ORDER BY
 - GROUP BY
 - HAVING
-- Aggregate Functions
 - DISTINCT
+- Aggregate Functions
 - LIMIT
-- Filtering Records
 
 ---
 
-## ✅ 2. Intermediate SQL
-
-Topics Covered
+## ✅ Intermediate SQL
 
 - INNER JOIN
 - LEFT JOIN
 - RIGHT JOIN
 - SELF JOIN
 - CASE Statements
-- Subqueries
-- Correlated Subqueries
 - UNION
 - UNION ALL
+- Subqueries
+- Correlated Subqueries
 - Common Table Expressions (CTEs)
 
 ---
 
-## ✅ 3. Advanced SQL
-
-Topics Covered
+## ✅ Advanced SQL
 
 - Complex CTEs
 - Nested Queries
 - Multi-table Analysis
+- Customer Analytics
 - Revenue Analysis
-- Customer Spending Analysis
-- Marketing Campaign Analysis
+- Marketing Analysis
 - Customer Insights
 
 ---
 
-## ✅ 4. Window Functions
-
-Topics Covered
+## ✅ Window Functions
 
 - ROW_NUMBER()
 - RANK()
@@ -159,27 +232,21 @@ Topics Covered
 
 ---
 
-## 🚧 5. Business Analysis SQL (Coming Soon)
+## ✅ Business Analysis
 
-A dedicated **Business Analysis SQL** file will be uploaded within the next few days.
+This project answers practical business questions using SQL, including:
 
-It will include real-world analytical questions such as:
-
-- Customer Segmentation
-- Customer Lifetime Value (CLV)
-- Revenue Contribution Analysis
-- Product Category Performance
-- Marketing Campaign Effectiveness
-- Digital Engagement Analysis
-- Purchase Behavior Analysis
-- Customer Retention Analysis
-- Customer Churn Analysis
-- Advanced KPI Reporting
+- Which customer segment should receive premium (non-discounted) offers?
+- Which customers should be targeted for digital-first campaigns?
+- Which low-spending customers show high campaign responsiveness?
+- Which customers are unprofitable and should be deprioritized?
+- What customer strategy should the company adopt to maximize revenue while reducing marketing waste?
 
 ---
 
-# 📁 Repository Structure
+# 💼 Business Recommendations
 
+<<<<<<< HEAD
 ```
 customer_segmentation_sql
 │
@@ -210,90 +277,89 @@ customer_segmentation_sql
 │
 └── 📄 README.md
 ```
+=======
+Based on the SQL analysis, the following business strategies are recommended:
+
+### Customer Retention
+
+- Prioritize resolving customer complaints to improve customer satisfaction and reduce churn.
+- Introduce a loyalty rewards program to encourage repeat purchases.
+
+### Sales & Revenue Growth
+
+- Introduce Buy Now, Pay Later (BNPL) or EMI payment options for eligible customers.
+- Promote premium wines, meat products, and other high-value products to high-income customers.
+- Introduce EMI or financing options for gold products to increase conversions.
+
+### Marketing Strategy
+
+- Focus campaigns on customers with a strong history of accepting previous marketing campaigns.
+- Continue nurturing customers who responded positively to the latest campaign.
+- Reduce marketing expenditure on consistently low-spending and low-engagement customers.
+- Personalize marketing campaigns based on customer purchasing behavior.
+
+### Digital Transformation
+
+- Encourage customers who primarily shop in physical stores to adopt digital purchasing through personalized online promotions.
+
+### Long-Term Customer Growth
+
+- Introduce student discounts and "Back-to-College" campaigns to build early brand loyalty.
+- Expand the product portfolio to better serve customers from diverse demographic and income groups.
+
+### Overall Strategy
+
+Focus on customer retention, personalized marketing, flexible payment options, digital transformation, and data-driven customer segmentation to maximize revenue while minimizing unnecessary marketing costs.
+
+>>>>>>> ed3219d (Finalize SQL project with business analysis and updated documentation)
 ---
 
-# 💡 SQL Skills Demonstrated
-
-- SQL Fundamentals
-- Joins
-- Aggregate Functions
-- Common Table Expressions (CTEs)
-- Window Functions
-- Ranking Functions
-- CASE Statements
-- Subqueries
-- Data Normalization
-- ETL Development
-- Customer Segmentation
-- Business Analytics
-- Marketing Analytics
-
----
-
-# 📈 Key Business Insights
-
-This project helps answer business questions such as:
-
-- Which customers generate the highest revenue?
-- Which product categories contribute the most revenue?
-- Which customer segments spend the most?
-- How effective are marketing campaigns?
-- Which purchase channels perform best?
-- Which customers are least engaged digitally?
-- Which customer groups respond positively to campaigns?
-- How does income influence purchasing behavior?
-
----
-
-# 🎯 Learning Outcomes
-
-By completing this project, I gained practical experience in:
+# 🧠 SQL Skills Demonstrated
 
 - Database Design
 - Data Cleaning
 - ETL Development
-- SQL Query Writing
+- Data Normalization
+- SQL Fundamentals
+- Joins
+- Aggregate Functions
+- CASE Statements
+- Subqueries
+- Common Table Expressions (CTEs)
 - Window Functions
-- Customer Analytics
+- Ranking Functions
+- Customer Segmentation
 - Marketing Analytics
-- Business Intelligence
+- Business Analytics
 - Analytical Problem Solving
-- Real-world Data Analysis
 
 ---
 
-# ✅ Project Status
+# 🚀 Future Improvements
 
-- ✅ Database Design Completed
-- ✅ Data Cleaning Completed
-- ✅ ETL Completed
-- ✅ Beginner SQL Queries Completed
-- ✅ Intermediate SQL Queries Completed
-- ✅ Advanced SQL Queries Completed
-- ✅ Window Functions Queries Completed
-- 🚧 Business Analysis SQL Queries are currently being expanded with additional real-world case studies and will be updated regularly.
+Future enhancements planned for this project include:
+
+- SQL Query Optimization
+- Indexing & Performance Tuning
+- Views
+- Materialized Views
+- Stored Procedures
+- Additional Business Case Studies
+- End-to-End Power BI Dashboard (to be developed in a separate repository)
 
 ---
 
 # 🏁 Conclusion
 
-This project demonstrates an end-to-end SQL analytics workflow—from transforming raw data into a normalized database to extracting meaningful business insights through SQL.
+This project demonstrates how SQL can be used to transform raw marketing data into meaningful business insights.
 
-Using a real-world marketing campaign dataset, the project showcases practical experience in:
+By combining database normalization, ETL, advanced SQL querying, Window Functions, and business-focused analysis, the project showcases practical skills commonly required in Data Analyst roles.
 
-- Database Design & Normalization
-- ETL Pipeline Development
-- Advanced SQL Querying
-- Window Functions
-- Customer Segmentation
-- Revenue Analysis
-- Marketing Analytics
-- Business Intelligence
-
-The repository will continue to grow with additional **Business Analysis SQL case studies**, advanced analytical queries, and real-world business scenarios to further strengthen practical SQL and data analytics skills.
+The repository reflects not only technical SQL proficiency but also the ability to translate data into actionable business recommendations for decision-making.
 
 ---
 
+<<<<<<< HEAD
 ## ⭐ Future Enhancements
 
 Upcoming updates include:
@@ -308,3 +374,6 @@ Upcoming updates include:
 ---
 
 ⭐ **If you found this project helpful, feel free to explore the queries and check back for future updates as more real-world business analysis problems are added.**
+=======
+## ⭐ If you found this project useful, consider giving it a star and exploring the SQL queries included in this repository.
+>>>>>>> ed3219d (Finalize SQL project with business analysis and updated documentation)
